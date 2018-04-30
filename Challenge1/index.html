@@ -9,87 +9,88 @@
     <title>Weekly WebDev Challenge 1 - Daniel Rejman</title>
 </head>
 <body>
-    <header><img src="img/headlogo.png" width=300px></header>
+    <div id="background">
+        <header><img src="img/headlogo.png" width=300px></header>
 
-    <section id="FirstSection">
-        <div id="RegisterForm">
-            <h1>Register Form</h1>
-            <div class="wrapper">
-                <form>
-                    <label><img class="labelImg" src="img/username.png" width=25px; /><input type="text" placeholder="Username" required  /></label>         
-                    <label><img class="labelImg" src="img/password.png" /><input type="password" placeholder="Password" required  /></label>          
-                    <label><img class="labelImg" src="img/password.png" /><input type="password" placeholder="ConfirmPassword" required  /></label>           
-                    <label><img class="labelImg" src="img/email.png" /><input type="email" placeholder="Email" required  /></label>           
-                    <label><img class="labelImg" src="img/location.png" /><input list="cities" placeholder="Location" required  /></label>          
-                    <datalist id="cities">
-                        <option>Warsaw</option>
-                        <option>Cracow</option>
-                        <option>Poznan</option>
-                    </datalist>
-                    <label class="checkBoxLabel"><input type="checkbox" name="Terms" required /><span class="checkMark"></span>I have read and accept terms of use</input></label>
-                    <input class="submitUnder" type="submit" value="Sign up" />        
-                </form>
-            </div>
-        </div>
-
-
-        <div id="SignInForm">
-            <h1>Sign In Form</h1>
-            <div class="wrapper">
-                <form>
-                    <label><img class="labelImg" src="img/username.png"/><input type="text" placeholder="Username" required /></label>
-                    <label><img class="labelImg" src="img/password.png" /><input type="password" placeholder="Password" required /></label>  
-                    <label class="checkBoxLabel"><input type="checkbox" name="Terms" required /><span class="checkMark"></span>Remember</input></label>
-                    <input class="submitRight" type="submit" value="Sign in" /> 
-                </form>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="SecondSection">
-        <div id="SendEmail">
-            <h1>Send Email</h1>
-            <div class="wrapper">
-                <form>
-                        <label><img class="labelImg" src="img/username.png"/><input type="text" placeholder="Your Name" required /></label>
-                        <label><img class="labelImg" src="img/email.png" /><input type="email" placeholder="Your Email" required /></label> 
-                        <textarea cols="30" rows="10" placeholder="Type your message..." required></textarea>
-                        <label class="checkBoxLabel"><input type="checkbox" name="Terms"><span class="checkMark"></span>Send a copy to my Email</input></label>
-                        <input class="submitUnder" type="submit" value="Send Email"> 
-                </form>
-            </div>        
-        </div>
-
-        <section id="SecondSection_Right">
-            <div id="RecoverForm">
-                <h1>Recover Form</h1>
+        <section id="FirstSection">
+            <div id="RegisterForm">
+                <h1>Register Form</h1>
                 <div class="wrapper">
                     <form>
-                        <label><img class="labelImg" src="img/email.png" /><input type="email" placeholder="Enter your Email" required /></label> 
-                        <label><img class="labelImg" src="img/phone.png" /><input type="tel" placeholder="Enter your Phone" required /></label>
-                        <input class="submitRight" type="submit" value="Send">
-                        <input class="submitRight" type="submit" value="Done" disabled>  
+                        <label><img class="labelImg" src="img/username.png" width=25px; /><input type="text" placeholder="Username" required  /></label>         
+                        <label><img class="labelImg" src="img/password.png" /><input type="password" placeholder="Password" required  /></label>          
+                        <label><img class="labelImg" src="img/password.png" /><input type="password" placeholder="ConfirmPassword" required  /></label>           
+                        <label><img class="labelImg" src="img/email.png" /><input type="email" placeholder="Email" required  /></label>           
+                        <label><img class="labelImg" src="img/location.png" /><input list="cities" placeholder="Location" required  /></label>          
+                        <datalist id="cities">
+                            <option>Warsaw</option>
+                            <option>Cracow</option>
+                            <option>Poznan</option>
+                        </datalist>
+                        <label class="checkBoxLabel"><input type="checkbox" name="Terms" required /><span class="checkMark"></span>I have read and accept terms of use</input></label>
+                        <input class="submitUnder" type="submit" value="Sign up" />        
                     </form>
                 </div>
             </div>
 
-            <div id="SubscribeForm">
-                <h1>Subscribe Form</h1>
+
+            <div id="SignInForm">
+                <h1>Sign In Form</h1>
                 <div class="wrapper">
                     <form>
-                        <label><img class="labelImg" src="img/email.png" /><input type="email" placeholder="Enter your Email" required /></label>
-                        <input class="submitRight" type="submit" value="Subscribe">
-                        <input class="submitRed" type="submit" value="No Thanks">
+                        <label><img class="labelImg" src="img/username.png"/><input type="text" placeholder="Username" required /></label>
+                        <label><img class="labelImg" src="img/password.png" /><input type="password" placeholder="Password" required /></label>  
+                        <label class="checkBoxLabel"><input type="checkbox" name="Terms" required /><span class="checkMark"></span>Remember</input></label>
+                        <input class="submitRight" type="submit" value="Sign in" /> 
                     </form>
                 </div>
             </div>
-
-            <footer><img src="img/footerlogo.png" width=250px></footer>
         </section>
 
-    </section>
 
+        <section id="SecondSection">
+            <div id="SendEmail">
+                <h1>Send Email</h1>
+                <div class="wrapper">
+                    <form>
+                            <label><img class="labelImg" src="img/username.png"/><input type="text" placeholder="Your Name" required /></label>
+                            <label><img class="labelImg" src="img/email.png" /><input type="email" placeholder="Your Email" required /></label> 
+                            <textarea cols="30" rows="10" placeholder="Type your message..." required></textarea>
+                            <label class="checkBoxLabel"><input type="checkbox" name="Terms"><span class="checkMark"></span>Send a copy to my Email</input></label>
+                            <input class="submitUnder" type="submit" value="Send Email"> 
+                    </form>
+                </div>        
+            </div>
+
+            <section id="SecondSection_Right">
+                <div id="RecoverForm">
+                    <h1>Recover Form</h1>
+                    <div class="wrapper">
+                        <form>
+                            <label><img class="labelImg" src="img/email.png" /><input type="email" placeholder="Enter your Email" required /></label> 
+                            <label><img class="labelImg" src="img/phone.png" /><input type="tel" placeholder="Enter your Phone" required /></label>
+                            <input class="submitRight" type="submit" value="Send">
+                            <input class="submitRight" type="submit" value="Done" disabled>  
+                        </form>
+                    </div>
+                </div>
+
+                <div id="SubscribeForm">
+                    <h1>Subscribe Form</h1>
+                    <div class="wrapper">
+                        <form>
+                            <label><img class="labelImg" src="img/email.png" /><input type="email" placeholder="Enter your Email" required /></label>
+                            <input class="submitRight" type="submit" value="Subscribe">
+                            <input class="submitRed" type="submit" value="No Thanks">
+                        </form>
+                    </div>
+                </div>
+
+                <footer><img src="img/footerlogo.png" width=250px></footer>
+            </section>
+
+        </section>
+    </div>
     
     
 

@@ -1,11 +1,15 @@
 body {
     margin: 0;
-    padding: 10px 0px;
-    border: 1px solid red;
-    background: url("img/Background.png") no-repeat;
-    background-size: 100% 100%;
     font-family: 'Titillium Web', sans-serif;
 }
+
+#background{
+    padding: 10px 0px;
+    background: url("img/Background.png") no-repeat;
+    background-size: 100% 100%;
+    margin: 0;
+}
+
 header {
     width:300px;
     margin: 1% auto;
