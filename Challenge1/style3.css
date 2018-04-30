@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+label, textarea {
+    display: flex; 
+    border:2px solid #c6c6c6;
+    border-radius: 6px;
+    margin: 1%;
+    height: 40px;
+}
+
+textarea{
+    font-family: 'Times New Roman', Times, serif;
+    width: 90%;
+    height: 100%;
+    font-size: 16px;
+    color : black;
+}
+
+.submitUnder{
+    margin-left: 25%;
+    width:250px;
+    background: linear-gradient(to right,#92cf2a ,#46b401);
+    border: 1px solid #3b9a00;
+}
+
+.submitRight{
+    margin-left: 5%;
+    width:150px;
+    background: linear-gradient(to right,#92cf2a ,#46b401);
+    border: 1px solid #3b9a00;
+}
+
+.submitRight:disabled{
+    opacity:0.7;
+}
+
+.submitRight:disabled:hover{
+    background: linear-gradient(to right,#92cf2a ,#46b401);
+}
+
+.submitRed{
+    width:150px;
+    margin-left: 5%;
+    background: linear-gradient(to right,#f55869 ,#f13b4a);
+    border: 1px solid #a82c36;
+}
+input[type="submit"]{
+    font-size: 20px;
+    text-shadow: 1px 1px 2px #2b0100;
+    color: white;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow : 1px 1px 5px #2b0100;
+    margin-top: 2%;
+    margin-bottom:2%;
+}
+.submitUnder:hover, .submitRight:hover{
+    background: linear-gradient(to right,#92cf2a ,#3ea200);
+}
+
+.submitRed:hover{
+    background: linear-gradient(to right,#f55869 ,#a82c36);
+}
+
+
+
+
