@@ -1,16 +1,14 @@
 body, html{
     padding:0px;
-    font-family: 'Titillium Web', sans-serif;
     margin: 0px;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 #background{
     display: flex;
     flex-direction: column;
-    padding: 10px 0px;
     background: url("img/Background.png") no-repeat;
     background-size: 100% 100%;
-    margin: 0px;
 }
 
 /* FORMS */
@@ -18,7 +16,7 @@ body, html{
 form{
     display: flex;
     flex-direction: column;
-    padding: 1%;
+    padding: 10px;
     background-color: #f4f4f4;
     border-radius: 6px;
 }
@@ -34,13 +32,14 @@ label{
     border-radius: 6px;
     margin: 5px auto;
     font-size: 25px;
+    cursor:text;
 }
 
 img.labelImg {
     border-right: 1px solid #ccc;
     width: 15px;
     height: 15px;
-    padding: 5px 2px;
+    padding: 8px 8px;
 }
 
 /* FORMS - INPUTS */
@@ -49,8 +48,8 @@ input[type="text"], input[type="password"], input[type="email"], input[list="cit
     border: 0;
     border-radius: 3px;
     background: linear-gradient(to bottom right, #f4f4f4, #f0f0f0);
-    width: 100%;    
     font-size: 25px;
+    color: #afafaf;
 }
 
 input[type="submit"]{
@@ -124,8 +123,12 @@ h1 {
 
 header {
     width:300px;
-    margin: 1% auto;
+    margin: 10px auto;
     opacity: 0.6;
+}
+
+header:hover {
+    opacity: 1;
 }
 
 footer {
@@ -134,6 +137,44 @@ footer {
     opacity: 0.2;
 }
 
-header:hover {
-    opacity: 1;
+
+
+
+@media only screen and (min-width: 768px){
+
+    #FirstSection, #SecondSection{
+        display: flex;
+        margin-left: 20%;
+    }
+    
+    #SignInForm, #SecondSection_Right{    
+        margin-left: 25%;
+    }
+
+    .submitRight > input[type="submit"]{
+        width: 200px;
+        margin: 5px;
+    }
+    
+    input[type="submit"]:disabled{
+        opacity:0.7;
+    }
+
+    input[type="submit"]:disabled:hover{
+        background: linear-gradient(to right,#92cf2a ,#46b401);
+    }
+
+    .submitRed{
+        background: linear-gradient(to right,#f55869 ,#f13b4a);
+        border: 1px solid #a82c36;
+    }
+
+    input[type="submit"]:hover{
+        background: linear-gradient(to right,#92cf2a ,#3ea200);
+    }
+
+    input.submitRed:hover{
+        background: linear-gradient(to right,#f55869 ,#a82c36);
+    }
+
 }

@@ -28,7 +28,7 @@
                             <option>Poznan</option>
                         </datalist>
                         <label class="checkBoxLabel"><input type="checkbox" name="Terms" required /><span class="checkMark"></span>I have read and accept terms of use</input></label>
-                        <input class="submitUnder" type="submit" value="Sign up" />        
+                        <input type="submit" value="Sign up" />        
                     </form>
                 </div>
             </div>
@@ -40,8 +40,10 @@
                     <form>
                         <label><img class="labelImg" src="img/username.png"/><input type="text" placeholder="Username" required /></label>
                         <label><img class="labelImg" src="img/password.png" /><input type="password" placeholder="Password" required /></label>  
+                        <div class="submitRight">
                         <label class="checkBoxLabel"><input type="checkbox" name="Terms" required /><span class="checkMark"></span>Remember</input></label>
-                        <input class="submitRight" type="submit" value="Sign in" /> 
+                        <input type="submit" value="Sign in" /> 
+                        </div>
                     </form>
                 </div>
             </div>
@@ -57,7 +59,7 @@
                             <label><img class="labelImg" src="img/email.png" /><input type="email" placeholder="Your Email" required /></label> 
                             <textarea cols="30" rows="10" placeholder="Type your message..." required></textarea>
                             <label class="checkBoxLabel"><input type="checkbox" name="Terms"><span class="checkMark"></span>Send a copy to my Email</input></label>
-                            <input class="submitUnder" type="submit" value="Send Email"> 
+                            <input type="submit" value="Send Email"> 
                     </form>
                 </div>        
             </div>
@@ -69,8 +71,10 @@
                         <form>
                             <label><img class="labelImg" src="img/email.png" /><input type="email" placeholder="Enter your Email" required /></label> 
                             <label><img class="labelImg" src="img/phone.png" /><input type="tel" placeholder="Enter your Phone" required /></label>
-                            <input class="submitRight" type="submit" value="Send">
-                            <input class="submitRight" type="submit" value="Done" disabled>  
+                            <div class="submitRight">
+                                <input type="submit" value="Send">
+                                <input type="submit" value="Done" disabled>  
+                             </div>
                         </form>
                     </div>
                 </div>
@@ -80,8 +84,10 @@
                     <div class="wrapper">
                         <form>
                             <label><img class="labelImg" src="img/email.png" /><input type="email" placeholder="Enter your Email" required /></label>
-                            <input class="submitRight" type="submit" value="Subscribe">
-                            <input class="submitRed" type="submit" value="No Thanks">
+                            <div class="submitRight">
+                                <input type="submit" value="Subscribe">
+                                <input class="submitRed" type="submit" value="No Thanks">
+                             </div>
                         </form>
                     </div>
                 </div>
