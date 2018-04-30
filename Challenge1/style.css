@@ -45,7 +45,7 @@ img.labelImg {
 /* FORMS - INPUTS */
 
 input[type="text"], input[type="password"], input[type="email"], input[list="cities"], input[type="tel"] {
-    width: 100%;
+    width: 250px;
     border: 0;
     border-radius: 3px;
     background: linear-gradient(to bottom right, #f4f4f4, #f0f0f0);
