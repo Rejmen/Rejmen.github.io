@@ -1,9 +1,13 @@
 body {
     margin: 0;
     font-family: 'Titillium Web', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 #background{
+    display: flex;
+    flex-direction: column;
     padding: 10px 0px;
     background: url("img/Background.png") no-repeat;
     background-size: 100% 100%;
