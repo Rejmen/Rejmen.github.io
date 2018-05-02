@@ -15,144 +15,143 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 
     <style>
+        html, body{
+            height: 100%;
+            margin:0px;
+            padding: 0px;
+        }
 
-    h1,h2,h3,h4,h5,h6{
-        font-weight: 500;
-    }
+        .paragraph{
+            padding-top: 10%;
+        }
 
-    .sectionText{
-        font-size: 20px;
-        text-align: left;
-    }
+        .titleParagraph{
+            font-size: 50px;
+            font-weight: bold;
+        }
 
-    .bg1{
-        background-color: #f9f8fb;
-    }
+        .textParagraph{
+            font-size: 20px;
+            text-align : justify;    
+        }
 
-    .bg2{
-        background-color: #00bfbf;
-        color: white;
-    }
+        .bg1{
+            background-color: #f9f8fb; 
+            min-height: 100%;
+        }
 
-    .bg3{
-        background-color: #70bfff;
-    }
+        .bg2{
+            background-color: #00bfbf;
+            color: white;
+            min-height: 100%;
+        }
 
-    .bg4{
-        background-color: #ffe92f;
-    }
+        .bg3{
+            background-color: #70bfff;
+            min-height: 100%;
+            
+        }
 
-    .sectionTitle{
-        padding-top: 15%;
-    }
+        .servicesIMG{
+            background: url("img/services.png") no-repeat;
+            position: center;
+            background-position: center;
+        }
+
+        .servicesText{
+            text-shadow: 2px 2px 5px #1f1f1f;   
+            margin: 40% auto;
+        }
+
+        .buttonTsdext{
+            border-right: 1px solid #9d9d9d;
+        }
+
+        .shopButton{    
+            font-size: 20px;       
+            padding: 20px;
+            text-transform: uppercase;
+        }
+
+        .glyphicon{
+            font-size: 25px;
+        }
+
+        .navbar{
+            background-color: #f9f8fb; 
+            font-size: 20px;
+        }
+
+
+        
     </style>
-    
-    <title>Document</title>
 </head>
-<body>
+<body>  
 
-    <div class="container-fluid bg1 text-center">
-        <div class="row">
-            <div class="col-xs-4 sectionTitle">      
-                    <h1>Fresh life</h1>
-                    <h2 class="sectionText"></p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. </h2>
-                    <button type="button" class="btn btn-default">GET FREE NOW</button>
-            </div>
-            <div class="col-xs-8">
-                    <img src="img/header.png" class="img-responsive" alt="StrawberryMilk">
-            </div>
-        </div>       
-    </div>
-
+    <nav class="navbar navbar-default" role="navigation">
+        <ul class="nav navbar-nav">
+            <li class="active">
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#services">Services</a>
+            </li>
+        </ul>
+    </nav>
     
-    <div class="container-fluid bg2">
-        <div class="row">
 
-            <div class="col-xs-6"></div>
-                <img src="img/about.png" class="img-responsive" alt="Image">
-            </div>
-
-            <div class="col-xs-6 text-center">
-                <h1>About us</h1>
-                <p>Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
-                    Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
-            </div>
+<div class="container-fluid bg1" id="home">
+    <div class="row">
+        <div class="col-xs-offset-2 col-xs-4 paragraph">
+            <p class="titleParagraph">Fresh life</p>
+            <p class="textParagraph">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>     
+            <button type="button" class="btn btn-warning">GET FREE NOW</button>
+            
         </div>
-
+        <div class="col-xs-6"><img src="img/header.png" class="img-responsive" alt="StrawberryMilk"></div>  
     </div>
+</div>
 
-    <div class="container-fluid bg3 text-center">
-
+<div class="container-fluid bg2" id="about">
+    <div class="col-xs-6"><img src="img/about.png" class="img-responsive" alt="AboutUs"></div> 
         <div class="row">
-            <div class="col-xs-3">              
-            </div>
-
-            <div class="col-xs-3">   
-                
-                <button type="button" class="btn btn-default">Online shopping 
-                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-                </button>
-
-                <button type="button" class="btn btn-default">Quality product 
-                <span class="glyphicon  glyphicon-grain" aria-hidden="true"></span>
-                </button>
-
-                <button type="button" class="btn btn-default">Domestic & International delivery 
-                <span class="glyphicon  glyphicon-globe" aria-hidden="true"></span>
-                </button>  
-                
-                <button type="button" class="btn btn-default">Well organized
-                <span class="glyphicon  glyphicon-ok" aria-hidden="true"></span>
-                </button>  
-                          
-            </div>
-
-            <div class="col-xs-3"> 
-                <img src="img/services.png" class="img-responsive" alt="Image">                 
-            </div>
-
-            <div class="col-xs-3">                             
-            </div>
-
-        </div>
-        
+            <div class="col-xs-5 col-cs-offset-1 paragraph">
+                <p class="titleParagraph">About us</p>
+                <p class="textParagraph">Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                        Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+            </div>     
     </div>
+</div>
 
-    <div class="container-fluid bg4 text-center">
 
-        
-        <div class="row">
-            <div class="col-xs-12">
-                <h2>Gallery</h2>
-                <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
+<div class="container-fluid bg3" id="services"> 
+    <div class="col-xs-offset-2 col-xs-4 paragraph"">
 
-            <div class="col-xs-12">
-                    <div class="row">
-                        <div class="col-xs-6"><img src="img/Gallery/1.png" class="img-responsive" alt="Image"></div>
-                        <div class="col-xs-6">
-                            <img src="img/Gallery/2.png" class="img-responsive" alt="Image">
-                            <img src="img/Gallery/3.png" class="img-responsive" alt="Image">
-                        </div>
-                    </div>
+        <button type="button" class="btn btn-block shopButton">
+        <span class="buttonText">Online shopping</span>
+        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></button>
 
-                    <div class="row">
-                            <div class="col-xs-6"><img src="img/Gallery/4.png" class="img-responsive" alt="Image"></div>
-                            <div class="col-xs-6"><img src="img/Gallery/5.png" class="img-responsive" alt="Image"></div>
-                    </div>
-            </div>
+        <button type="button" class="btn btn-block shopButton"> 
+        <span class="buttonText">Quality product</span>
+        <span class="glyphicon  glyphicon-grain" aria-hidden="true"></span></button>
 
-            <div class="col-xs-12"> 
-                <button type="button" class="btn btn-default">View more</button>
-        
-            </div>
-        </div>
+        <button type="button" class="btn btn-block shopButton">
+        <span class="buttonText">International delivery</span>     
+        <span class="glyphicon  glyphicon-globe" aria-hidden="true"></span></button>
 
+        <button type="button" class="btn btn-block shopButton">
+        <span class="buttonText">Well organized</span>    
+        <span class="glyphicon  glyphicon-ok" aria-hidden="true"></span></button>
+              
     </div>
-    
+        <div class="col-xs-6 servicesIMG text-center"><p class="servicesText titleParagraph" style="color: white;">Our services</p></div>
+    </div>         
+</div>
 
-    
 
-    
+
 </body>
 </html>
