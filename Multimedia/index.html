@@ -1,0 +1,234 @@
+
+
+<!DOCTYPE html>
+<html lang="pl">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Daniel Rejman 203bCl</title>
+      <style>
+         body, html{
+            background:url("Background.jpg");
+            display: flex;
+            flex-direction: column;
+            margin:0;
+            padding:0;
+            color:white;
+         }
+         main h1, header h1{
+            text-align:center;      
+         }
+         header video{
+             width: 100%;
+         }
+         main button.slide{    
+            background: linear-gradient(to left bottom, #f22a38, #8e080f);
+            margin: 0;
+            padding: 0;
+            width:100%;
+            border:0;
+         }
+         main button.slide:hover{
+            background: #8e080f;
+            cursor: pointer;
+         }
+
+         footer{
+             text-align:center;
+             padding-bottom: 10%;
+         }
+         footer img{            
+            width: 75%;
+         }
+         div#soundtrack{
+            display: flex;
+            flex-direction: column;
+            background: url("background-soundtrack.jpg");
+            height: 300px;
+         }
+         div#soundtrack, div#wymagania{
+            border-bottom:2px solid #8e080f;
+            padding: 50px 25px;
+            font-size: 2rem;
+            text-shadow: 1px 1px 2px #444;
+         }
+         div#soundtrack button{
+             background: 0;
+             border:0;
+         }
+         div#soundtrack i.fa{
+             color: #c9d9d8;
+             font-size: 2rem;
+         }
+
+         div#wymagania li{
+             list-style-image: url("li.png");
+         }
+
+         div#wymagania{
+             background: url("Background-wymagania.jpg") no-repeat;
+             background-size: cover;
+         }
+         #gallery-box{
+             display: flex;
+         }
+         #gallery-prev, #gallery-next{
+             background: linear-gradient(to left bottom, #f22a38, #8e080f);
+             border:0;
+             height:4rem;
+             width: 7rem;
+             font-size: 2rem;
+             margin: auto 20px;
+         }
+         #gallery-prev:hover, #gallery-next:hover{
+             background: #8e080f;
+             cursor: pointer;
+         }
+
+        #sekret{
+            height: 250px;
+            display: none;
+        }
+
+        @media only screen and (max-width: 900px) {
+        #sekret {
+            display: block;
+            background: url("sekret.jpg") no-repeat;
+            background-size:contain;
+            width: 50%;
+            margin: 0 auto;
+        }
+}
+      </style>
+      <script
+         src="https://code.jquery.com/jquery-3.3.1.min.js"
+         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+         crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+         integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+         crossorigin="anonymous">
+   </head>
+   <body>
+      <header>
+         <h1>Wiedźmin 3 - dziki gon</h1>
+         <video autoplay>
+            <source src="TheWitcher3.mp4" type="video/mp4">
+            <source src="mov_bbb.ogg" type="video/ogg">
+            Your browser does not support HTML5 video.
+         </video>
+      </header>
+      <main>
+         <button class="slide"><h1>Soundtrack</h1></button>
+         <div id="soundtrack">
+             <div id="track1">
+                    <button id="play-the-trail"><i class="fa fa-play-circle"></i></button>
+                    <button id="stop-the-trail"><i class="fa fa-stop-circle"></i></button> 
+                    The trail
+                    <audio id="the-trail">
+                       <source src="The Trail.mp3" type='audio/mpeg'>
+                       <source src="plik.ogg" type='audio/ogg'>
+                       Pobierz plik w formacie: <a href="plik.mp3">MP3</a>, <a href="plik.ogg">OGG</a>
+                    </audio>
+             </div>
+             <div id="track2">
+                    <button id="play-geralt-of-rivia"><i class="fa fa-play-circle"></i></button>
+                    <button id="stop-geralt-of-rivia"><i class="fa fa-stop-circle"></i></button> 
+                    Geralt of rivia
+                    <audio id="geralt-of-rivia">
+                       <source src="Geralt of Rivia.mp3" type='audio/mpeg'>
+                       <source src="plik.ogg" type='audio/ogg'>
+                       Pobierz plik w formacie: <a href="plik.mp3">MP3</a>, <a href="plik.ogg">OGG</a>
+                    </audio>
+             </div>
+         </div>
+         <button class="slide"><h1>Wymagania sprzętowe</h1></button>
+         <div id="wymagania">
+            <ul>
+               <li>System operacyjny: Windows 7 (64-bit), Windows 8.1 (64-bit)</li>
+               <li>Procesor: Intel Core i5 2500K 3,3 GHz lub AMD Phenom II X4 940.</li>
+               <li>Karta graficzna: NVIDIA GeForce GTX 660 lub AMD Radeon HD 7870.</li>
+               <li>Pamięć: 6 GB RAM.</li>
+               <li>Dysk twardy: 40 GB.</li>
+               <li>DirectX 11.</li>
+            </ul>
+         </div>
+      </main>
+      <footer>
+            <h1>Galeria</h1>
+            <h2 id="gallery-title"></h2>
+          <div id="gallery-box">
+         <button id="gallery-prev"><i class="fa fa-backward"></i></button>
+         <img id="gallery" src="" alt="witcher"/>
+         <button id="gallery-next"><i class="fa fa-forward"></i></button>
+        </div>
+
+         <h1>Sekret</h1>
+         <h2>Przybliż się, aby odkryć sekret (ctrl+kołko myszy)</h2>
+         <div id="sekret">
+         </div>
+
+
+      </footer>
+      <script>
+        var slideButtons = document.querySelectorAll("main button.slide");
+        //$("div#soundtrack").slideUp();
+        //$("div#wymagania").slideUp();
+         slideButtons[0].addEventListener("click",function(){
+             $("div#soundtrack").slideToggle();
+         })
+         slideButtons[1].addEventListener("click",function(){
+             $("div#wymagania").slideToggle();
+         })
+
+         document.getElementById("play-the-trail").addEventListener("click",function(){
+             document.getElementById("the-trail").play();
+         });
+         
+         document.getElementById("stop-the-trail").addEventListener("click",function(){
+             document.getElementById("the-trail").pause();
+         });
+         
+         document.getElementById("play-geralt-of-rivia").addEventListener("click",function(){
+             document.getElementById("geralt-of-rivia").play();
+         });
+         
+         document.getElementById("stop-geralt-of-rivia").addEventListener("click",function(){
+             document.getElementById("geralt-of-rivia").pause();
+         });
+
+         const imgs = [];
+         imgs[0] = ["Szarlej","img1.jpg","#c9a865"];
+         imgs[1] = ["Shani","img2.jpg","#4f3f03"];
+         imgs[2] = ["Olgierd","img3.jpg","#e39018"];
+         imgs[3] = ["Gryf","img4.jpg","#a3bbc7"];
+         console.log(imgs[0][0]);
+         var imgFlag = 0;
+         var gallery = document.getElementById("gallery");
+         var galleryTitle = document.getElementById("gallery-title");
+         var galleryBackground = document.querySelector("footer");
+            galleryTitle.innerHTML =  imgs[imgFlag][0];
+            gallery.src=imgs[imgFlag][1]; 
+            galleryBackground.style.backgroundColor = imgs[imgFlag][2];
+
+        document.getElementById("gallery-prev").addEventListener("click",function(){
+           imgFlag--;
+           if(imgFlag < 0)
+              imgFlag = imgs.length-1;
+            galleryTitle.innerHTML =  imgs[imgFlag][0];
+            gallery.src=imgs[imgFlag][1];  
+            galleryBackground.style.backgroundColor = imgs[imgFlag][2];
+        });
+
+        document.getElementById("gallery-next").addEventListener("click",function(){
+           imgFlag++;
+            if(imgFlag > imgs.length-1)
+                imgFlag = 0;
+            galleryTitle.innerHTML =  imgs[imgFlag][0];
+            gallery.src=imgs[imgFlag][1]; 
+            galleryBackground.style.backgroundColor = imgs[imgFlag][2];
+         });
+      </script>
+   </body>
+</html>
+
