@@ -117,6 +117,10 @@ header h1{
 }
 
 @media only screen and (max-width: 900px) {
+body{
+    font-size: 1rem;
+}
+
 footer h3{
     display: none;
 }
@@ -127,7 +131,5 @@ footer h3{
     margin: 0 auto;
     background-size:contain;
 }
-body{
-    font-size: 1rem;
-}
+
 }
