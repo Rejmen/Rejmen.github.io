@@ -1,22 +1,21 @@
 #preloader {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: black;
-	z-index: fixed;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    z-index: fixed;
 }
 #preloader #image {
-	width: 120px;
-	height: 120px;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	background: #000 url('preloader.gif') no-repeat center;
-	margin: -60px 0 0 -60px;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: #000 url('preloader.gif') no-repeat center;
+    margin: -60px 0 0 -60px;
 }
-
 body, html{
     background: black;
     display: flex;
@@ -24,19 +23,18 @@ body, html{
     margin:0;
     padding:0;
     color:white;
- }
- main h1, header h1{
-    text-align:center;      
- }
- header video{
-     width: 100%;
- }
-
+}
+main h1, header h1{
+    text-align:center;
+}
+header video{
+    width: 100%;
+}
 header h1{
     background: linear-gradient(to bottom, #222, #444);
     margin:0;
 }
- header h1 p{
+header h1 p{
     animation-name: dzikigon;
     animation-duration: 2s;
     animation-iteration-count:infinite;
@@ -44,88 +42,86 @@ header h1{
     font-style: italic;
 }
 @keyframes dzikigon {
-    from {color: white;}
-    to {color: red;}
+    from {
+       color: white;
+   }
+    to {
+       color: red;
+   }
 }
- main button.slide{    
+main button.slide{
     background: linear-gradient(to left bottom, #f22a38, #8e080f);
     margin: 0;
     padding: 0;
     width:100%;
     border:0;
- }
- main button.slide:hover{
+}
+main button.slide:hover{
     background: #8e080f;
     cursor: pointer;
- }
-
- footer{
-     text-align:center;
-     padding-bottom: 10%;
- }
- footer img{            
+}
+footer{
+    text-align:center;
+    padding-bottom: 10%;
+}
+footer img{
     width: 75%;
- }
- div#soundtrack{
+}
+div#soundtrack{
+    background: url("img/background-soundtrack.jpg");
     display: flex;
     flex-direction: column;
-    background: url("background-soundtrack.jpg");
     height: 300px;
- }
- div#soundtrack, div#wymagania{
+}
+div#soundtrack, div#wymagania{
     border-bottom:2px solid #8e080f;
     padding: 50px 25px;
     font-size: 2rem;
     text-shadow: 1px 1px 2px #444;
- }
- div#soundtrack button{
-     background: 0;
-     border:0;
- }
- div#soundtrack i.fa{
-     color: #c9d9d8;
-     font-size: 2rem;
- }
-
- div#wymagania li{
-     list-style-image: url("li.png");
- }
-
- div#wymagania{
-     background: url("Background-wymagania.jpg") no-repeat;
-     background-size: cover;
- }
- #gallery-box{
-     display: inline-flex;
- }
- #gallery-prev, #gallery-next{
-     background: linear-gradient(to left bottom, #f22a38, #8e080f);
-     border:0;
-     height:4rem;
-     width: 7rem;
-     font-size: 2rem;
-     margin: auto 20px;
- }
- #gallery-prev:hover, #gallery-next:hover{
-     background: #8e080f;
-     cursor: pointer;
- }
-
+}
+div#soundtrack button{
+    background: 0;
+    border:0;
+}
+div#soundtrack i.fa{
+    color: #c9d9d8;
+    font-size: 2rem;
+}
+div#wymagania li{
+    list-style-image: url("li.png");
+}
+div#wymagania{
+    background: url("img/background-wymagania.jpg") no-repeat;
+    background-size: cover;
+}
+#gallery-box{
+    display: inline-flex;
+}
+#gallery-prev, #gallery-next{
+    background: linear-gradient(to left bottom, #f22a38, #8e080f);
+    border:0;
+    height:4rem;
+    width: 7rem;
+    font-size: 2rem;
+    margin: auto 20px;
+}
+#gallery-prev:hover, #gallery-next:hover{
+    background: #8e080f;
+    cursor: pointer;
+}
 #sekret{
     height: 250px;
     display: none;
 }
-
 @media only screen and (max-width: 900px) {
-footer h3{
-    display: none;
-}
-#sekret {
-    display: block;
-    background: url("sekret.jpg") no-repeat;
-    max-width: 30%;
-    margin: 0 auto;
-    background-size:contain;
-}
-
+    footer h3{
+        display: none;
+   }
+    #sekret {
+        display: block;
+        background: url("img/sekret.jpg") no-repeat;
+        max-width: 30%;
+        margin: 0 auto;
+        background-size:contain;
+   }
 }
