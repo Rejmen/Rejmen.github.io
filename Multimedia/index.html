@@ -11,6 +11,9 @@
          crossorigin="anonymous">
    </head>
    <body>
+        <div id="preloader">
+                <div id="image"></div>
+            </div>
       <header>
          <h1>Wiedźmin 3
          </br><p>Dziki gon</p></h1>
@@ -78,6 +81,12 @@
       crossorigin="anonymous"></script>
       <script>
 
+        $(window).ready(function() { 
+            $("#preloader #image").fadeOut(); 
+            $("#preloader").delay(450).fadeOut("slow"); 
+        
+        
+
         var slideButtons = document.querySelectorAll("main button.slide");
         $("div#soundtrack").slideUp();
         $("div#wymagania").slideUp();
@@ -143,6 +152,8 @@
             gallery.src=imgs[imgFlag][1]; 
             galleryBackground.style.backgroundColor = imgs[imgFlag][2];
          });
+
+         })
       </script>
    </body>
 </html>
