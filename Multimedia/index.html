@@ -12,9 +12,7 @@
       <div id="preloader">
          <div id="image"></div>
       </div>
-      <div id="bufor" style="position:absolute; left:-99999px">
-          <img src="img/img2.jpg" /> <img src="img/img3.jpg" /> <img src="img/img4.jpg" />
-      </div>
+      <div id="bufor" style="position:absolute; left:-99999px"></div>
       <header>
          <h1>
             Wiedźmin 3
@@ -145,8 +143,13 @@
                  gallery.src = imgs[imgFlag][1];
                  galleryBackground.style.backgroundColor = imgs[imgFlag][2];
              });
-                $("#preloader #image").delay(3000).fadeOut();
-                $("#preloader").delay(3000).fadeOut("slow");
+
+            $("#bufor").load("img/gallery/img2.jpg");
+            $("#bufor").load("img/gallery/img3.jpg");
+            $("#bufor").load("img/gallery/img4.jpg",function(){
+                $("#preloader #image").fadeOut();
+                $("#preloader").delay(450).fadeOut("slow");
+            });
          
       </script>
    </body>
