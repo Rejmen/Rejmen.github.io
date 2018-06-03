@@ -7,7 +7,17 @@
       <title>Daniel Rejman 203bCl</title>
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-   </head>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script>     
+        $(document).ready(function() {
+            $("#preloader #image").fadeOut();
+            $("#preloader").delay(450).fadeOut("slow");
+        
+        });</script>
+
+   
+   
+    </head>
    <body>
       <div id="preloader">
          <div id="image"></div>
@@ -75,7 +85,6 @@
          <div id="sekret">
          </div>
       </footer>
-      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
       <script>
              var slideButtons = document.querySelectorAll("main button.slide");
              $("div#soundtrack").slideUp();
@@ -142,11 +151,7 @@
                  gallery.src = imgs[imgFlag][1];
                  galleryBackground.style.backgroundColor = imgs[imgFlag][2];
              });
-             $(window).ready(function() {
-             $("#preloader #image").fadeOut();
-             $("#preloader").delay(450).fadeOut("slow");
-         
-         });
+
          
       </script>
    </body>
