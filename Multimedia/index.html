@@ -78,11 +78,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script>
         $(window).ready(function() {
-            $("#preloader #image").fadeOut();
-            $("#preloader").delay(450).fadeOut("slow");
-
-
-
             var slideButtons = document.querySelectorAll("main button.slide");
             $("div#soundtrack").slideUp();
             $("div#wymagania").slideUp();
@@ -148,6 +143,8 @@
                 gallery.src = imgs[imgFlag][1];
                 galleryBackground.style.backgroundColor = imgs[imgFlag][2];
             });
+            $("#preloader #image").fadeOut();
+            $("#preloader").delay(450).fadeOut("slow");
         })
  
     </script>
