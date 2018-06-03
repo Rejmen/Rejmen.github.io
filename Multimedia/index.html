@@ -146,11 +146,8 @@
                  galleryBackground.style.backgroundColor = imgs[imgFlag][2];
              });
 
-             $("#bufor").ready(function(){
-                $("#preloader #image").fadeOut();
-             $("#preloader").fadeOut("slow");
-             })
-
+             $("#preloader #image").delay(3000).fadeOut();
+             $("#preloader").delay(3000).fadeOut("slow");
          
       </script>
    </body>
