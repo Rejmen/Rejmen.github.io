@@ -1,160 +1,156 @@
 <!DOCTYPE html>
 <html lang="pl">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Daniel Rejman 203bCl</title>
-      <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-         integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-         crossorigin="anonymous">
-   </head>
-   <body>
-        <div id="preloader">
-                <div id="image"></div>
-            </div>
-      <header>
-         <h1>Wiedźmin 3
-         </br><p>Dziki gon</p></h1>
-         <video autoplay>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Daniel Rejman 203bCl</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="preloader">
+        <div id="image"></div>
+    </div>
+    <header>
+        <h1>Wiedźmin 3
+            </br>
+            <p>Dziki gon</p>
+        </h1>
+        <video autoplay>
             <source src="TheWitcher3.mp4" type="video/mp4">
             <source src="mov_bbb.ogg" type="video/ogg">
             Your browser does not support HTML5 video.
          </video>
-      </header>
-      <main>
-         <button class="slide"><h1>Soundtrack</h1></button>
-         <div id="soundtrack">
-             <div id="track1">
-                    <button id="play-the-trail"><i class="fa fa-play-circle"></i></button>
-                    <button id="stop-the-trail"><i class="fa fa-stop-circle"></i></button> 
-                    The trail
-                    <audio class="sound" id="the-trail">
+    </header>
+    <main>
+        <button class="slide"><h1>Soundtrack</h1></button>
+        <div id="soundtrack">
+            <div id="track1">
+                <button id="play-the-trail"><i class="fa fa-play-circle"></i></button>
+                <button id="stop-the-trail"><i class="fa fa-stop-circle"></i></button> The trail
+                <audio class="sound" id="the-trail">
                        <source src="The Trail.mp3" type='audio/mpeg'>
                        <source src="The Trail.ogg" type='audio/ogg'>
                        Pobierz plik w formacie: <a href="plik.mp3">MP3</a>, <a href="plik.ogg">OGG</a>
                     </audio>
-             </div>
-             <div id="track2">
-                    <button id="play-geralt-of-rivia"><i class="fa fa-play-circle"></i></button>
-                    <button id="stop-geralt-of-rivia"><i class="fa fa-stop-circle"></i></button> 
-                    Geralt of rivia
-                    <audio class="sound" id="geralt-of-rivia">
+            </div>
+            <div id="track2">
+                <button id="play-geralt-of-rivia"><i class="fa fa-play-circle"></i></button>
+                <button id="stop-geralt-of-rivia"><i class="fa fa-stop-circle"></i></button> Geralt of rivia
+                <audio class="sound" id="geralt-of-rivia">
                        <source src="Geralt of Rivia.mp3" type='audio/mpeg'>
                        <source src="Geralt of Rivia.ogg" type='audio/ogg'>
                        Pobierz plik w formacie: <a href="plik.mp3">MP3</a>, <a href="plik.ogg">OGG</a>
                     </audio>
-             </div>
-         </div>
-         <button class="slide"><h1>Wymagania sprzętowe</h1></button>
-         <div id="wymagania">
+            </div>
+        </div>
+        <button class="slide"><h1>Wymagania sprzętowe</h1></button>
+        <div id="wymagania">
             <ul>
-               <li>System operacyjny: Windows 7 (64-bit), Windows 8.1 (64-bit)</li>
-               <li>Procesor: Intel Core i5 2500K 3,3 GHz lub AMD Phenom II X4 940.</li>
-               <li>Karta graficzna: NVIDIA GeForce GTX 660 lub AMD Radeon HD 7870.</li>
-               <li>Pamięć: 6 GB RAM.</li>
-               <li>Dysk twardy: 40 GB.</li>
-               <li>DirectX 11.</li>
+                <li>System operacyjny: Windows 7 (64-bit), Windows 8.1 (64-bit)</li>
+                <li>Procesor: Intel Core i5 2500K 3,3 GHz lub AMD Phenom II X4 940.</li>
+                <li>Karta graficzna: NVIDIA GeForce GTX 660 lub AMD Radeon HD 7870.</li>
+                <li>Pamięć: 6 GB RAM.</li>
+                <li>Dysk twardy: 40 GB.</li>
+                <li>DirectX 11.</li>
             </ul>
-         </div>
-      </main>
-      <footer>
-            <h1>Galeria</h1>
-            <h2 id="gallery-title"></h2>
-          <div id="gallery-box">
-         <button id="gallery-prev"><i class="fa fa-backward"></i></button>
-         <img id="gallery" src="" alt="witcher"/>
-         <button id="gallery-next"><i class="fa fa-forward"></i></button>
+        </div>
+    </main>
+    <footer>
+        <h1>Galeria</h1>
+        <h2 id="gallery-title"></h2>
+        <div id="gallery-box">
+            <button id="gallery-prev"><i class="fa fa-backward"></i></button>
+            <img id="gallery" src="" alt="witcher" />
+            <button id="gallery-next"><i class="fa fa-forward"></i></button>
         </div>
 
-         <h1>Sekret</h1>
-         <h3>Przybliż się, aby odkryć sekret (ctrl+kołko myszy)</h3>
-         <div id="sekret">
-         </div>
+        <h1>Sekret</h1>
+        <h3>Przybliż się, aby odkryć sekret (ctrl+kołko myszy)</h3>
+        <div id="sekret">
+        </div>
 
 
-      </footer>
-      <script
-      src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"></script>
-      <script>
-
-        $(window).ready(function() { 
-            $("#preloader #image").fadeOut(); 
-            $("#preloader").delay(450).fadeOut("slow"); 
-        
-        
-
-        var slideButtons = document.querySelectorAll("main button.slide");
-        $("div#soundtrack").slideUp();
-        $("div#wymagania").slideUp();
-         slideButtons[0].addEventListener("click",function(){
-             $("div#soundtrack").slideToggle();
-         })
-         slideButtons[1].addEventListener("click",function(){
-             $("div#wymagania").slideToggle();
-         })
-
-         function pauseSounds(){
-            document.querySelectorAll(".sound").forEach(element => {
-             element.load();
-         });
-         }
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+        $(window).load(function() {
+            $("#preloader #image").fadeOut();
+            $("#preloader").delay(450).fadeOut("slow");
 
 
-         document.getElementById("play-the-trail").addEventListener("click",function(){
-            pauseSounds();
-             document.getElementById("the-trail").play();
-         });
-         
-         document.getElementById("stop-the-trail").addEventListener("click",function(){
-             document.getElementById("the-trail").load();
-         });
-         
-         document.getElementById("play-geralt-of-rivia").addEventListener("click",function(){
-            pauseSounds();
-             document.getElementById("geralt-of-rivia").play();
-         });
-         
-         document.getElementById("stop-geralt-of-rivia").addEventListener("click",function(){
-             document.getElementById("geralt-of-rivia").load();
-         });
 
-         const imgs = [];
-         imgs[0] = ["Szarlej","img1.jpg","#c9a865"];
-         imgs[1] = ["Shani","img2.jpg","#4f3f03"];
-         imgs[2] = ["Olgierd","img3.jpg","#e39018"];
-         imgs[3] = ["Gryf","img4.jpg","#a3bbc7"];
-         var imgFlag = 0;
-         var gallery = document.getElementById("gallery");
-         var galleryTitle = document.getElementById("gallery-title");
-         var galleryBackground = document.querySelector("footer");
-            galleryTitle.innerHTML =  imgs[imgFlag][0];
-            gallery.src=imgs[imgFlag][1]; 
+            var slideButtons = document.querySelectorAll("main button.slide");
+            $("div#soundtrack").slideUp();
+            $("div#wymagania").slideUp();
+            slideButtons[0].addEventListener("click", function() {
+                $("div#soundtrack").slideToggle();
+            })
+            slideButtons[1].addEventListener("click", function() {
+                $("div#wymagania").slideToggle();
+            })
+
+            function pauseSounds() {
+                document.querySelectorAll(".sound").forEach(element => {
+                    element.load();
+                });
+            }
+
+
+            document.getElementById("play-the-trail").addEventListener("click", function() {
+                pauseSounds();
+                document.getElementById("the-trail").play();
+            });
+
+            document.getElementById("stop-the-trail").addEventListener("click", function() {
+                document.getElementById("the-trail").load();
+            });
+
+            document.getElementById("play-geralt-of-rivia").addEventListener("click", function() {
+                pauseSounds();
+                document.getElementById("geralt-of-rivia").play();
+            });
+
+            document.getElementById("stop-geralt-of-rivia").addEventListener("click", function() {
+                document.getElementById("geralt-of-rivia").load();
+            });
+
+            const imgs = [];
+            imgs[0] = ["Szarlej", "img1.jpg", "#c9a865"];
+            imgs[1] = ["Shani", "img2.jpg", "#4f3f03"];
+            imgs[2] = ["Olgierd", "img3.jpg", "#e39018"];
+            imgs[3] = ["Gryf", "img4.jpg", "#a3bbc7"];
+            var imgFlag = 0;
+            var gallery = document.getElementById("gallery");
+            var galleryTitle = document.getElementById("gallery-title");
+            var galleryBackground = document.querySelector("footer");
+            galleryTitle.innerHTML = imgs[imgFlag][0];
+            gallery.src = imgs[imgFlag][1];
             galleryBackground.style.backgroundColor = imgs[imgFlag][2];
 
-        document.getElementById("gallery-prev").addEventListener("click",function(){
-           imgFlag--;
-           if(imgFlag < 0)
-              imgFlag = imgs.length-1;
-            galleryTitle.innerHTML =  imgs[imgFlag][0];
-            gallery.src=imgs[imgFlag][1];  
-            galleryBackground.style.backgroundColor = imgs[imgFlag][2];
-        });
+            document.getElementById("gallery-prev").addEventListener("click", function() {
+                imgFlag--;
+                if (imgFlag < 0)
+                    imgFlag = imgs.length - 1;
+                galleryTitle.innerHTML = imgs[imgFlag][0];
+                gallery.src = imgs[imgFlag][1];
+                galleryBackground.style.backgroundColor = imgs[imgFlag][2];
+            });
 
-        document.getElementById("gallery-next").addEventListener("click",function(){
-           imgFlag++;
-            if(imgFlag > imgs.length-1)
-                imgFlag = 0;
-            galleryTitle.innerHTML =  imgs[imgFlag][0];
-            gallery.src=imgs[imgFlag][1]; 
-            galleryBackground.style.backgroundColor = imgs[imgFlag][2];
-         });
+            document.getElementById("gallery-next").addEventListener("click", function() {
+                imgFlag++;
+                if (imgFlag > imgs.length - 1)
+                    imgFlag = 0;
+                galleryTitle.innerHTML = imgs[imgFlag][0];
+                gallery.src = imgs[imgFlag][1];
+                galleryBackground.style.backgroundColor = imgs[imgFlag][2];
+            });
 
-         })
-      </script>
-   </body>
+        })
+    </script>
+</body>
+
 </html>
-
