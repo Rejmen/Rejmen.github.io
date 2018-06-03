@@ -7,20 +7,12 @@
       <title>Daniel Rejman 203bCl</title>
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-        <script>     
-        $(document).load("media/TheWitcher3.mp4",function() {
-            $("#preloader #image").fadeOut();
-            $("#preloader").delay(450).fadeOut("slow");
-        });</script>
-
-   
-   
-    </head>
+   </head>
    <body>
       <div id="preloader">
          <div id="image"></div>
       </div>
+      <div id="bufor" style="display: none"></div>
       <header>
          <h1>
             Wiedźmin 3
@@ -84,6 +76,7 @@
          <div id="sekret">
          </div>
       </footer>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
       <script>
              var slideButtons = document.querySelectorAll("main button.slide");
              $("div#soundtrack").slideUp();
@@ -151,6 +144,12 @@
                  galleryBackground.style.backgroundColor = imgs[imgFlag][2];
              });
 
+ $("#bufor").load("img/img2.jpg");
+ $("#bufor").load("img/img3.jpg");
+ $("#bufor").load("img/img4.jpg",function(){
+    $("#preloader #image").fadeOut();
+             $("#preloader").delay(450).fadeOut("slow");
+ });
          
       </script>
    </body>
